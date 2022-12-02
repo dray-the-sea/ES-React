@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import ObservationForm from './Observation';
+import ObservationForm from './ObservationForm';
+import ObservationList from './ObservationList';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ObservationForm />
+    <App/>
+
   </React.StrictMode>
 );
 
