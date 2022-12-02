@@ -1,28 +1,14 @@
-import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 const moment = require('moment');
-
-/*
-class ObservationList extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = { 
-      user: 'will deal with this later',
-      observations: []
-    };
-  }
-}
-*/
-
 
 class ObservationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      feeling: 'a-okay',
-      person: 'just me',
-      activity: 'tinkering with the CORS',
+      feeling: '',
+      person: '',
+      activity: '',
       timestamp: ''
     };
     this.handleFeelingChange = this.handleFeelingChange.bind(this);
